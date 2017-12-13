@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="hashtagMap.css">
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+    <script src="jquery/external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+            <script>
+            $(function() {
+                $("#sign-in-with-twitter").on("click", function() {
+                    window.location.href = "http://127.0.0.1:3000/auth/twitter"
+                });
+            });
+        </script>
+
+</head>
+<body>
+    <h1 id="header">Election 2016 Candidate Sentiment Map</h1>
+    <h2 id="name-header">Alex Engel</h2>
+    <table align="center" id="visualization-table">
+        <tr>
+            <td id="svgCell" rowspan="2">
+                
+            </td>
+            <td id="historical-filter-cell">
+                <h3 id="candidate-menu-header" align="center">
+                    Overall Twitter Sentiment by State
+                </h3>
+                <form>
+                    <label class="checkbox-label"><input type="radio" name="candidate" value="trump" checked="checked" onchange="gatherResults()">Donald Trump</label><br>
+                    <label class="checkbox-label"><input type="radio" name="candidate" value="clinton" onchange="gatherResults()">Hillary Clinton</label><br>
+                    <label class="checkbox-label"><input type="radio" name="candidate" value="sanders" onchange="gatherResults()" >Bernie Sanders</label>
+                </form>
+                <br>
+                <br>
+                <span id="negativeLabel"><label>Negative</label></span>
+                <span id="positiveLabel"><label>Positive</label></span>
+                <br>
+                <div id="keyDiv"></div>
+
+
+            </td>
+        </tr>
+        <tr>
+            <td id="real-time-filter-cell">
+                <h3 id="real-time-label">Real-time Tweet Sentiment</h3>
+                <br>
+                <label id="instructions">Select Candidates:</label>
+                <br>
+                <br>
+                <button id="sign-in-with-twitter"><img id="signInPic" src="images/sign-in-with-twitter.png"></button>
+                <form id="candidate-boxes">
+                    <label class="checkbox-label"><input type="checkbox" name="stream-candidate" class="candidateBox" value="trump">Donald Trump</label><br>
+                    <label class="checkbox-label"><input type="checkbox" name="stream-candidate"
+                                  class="candidateBox" value="clinton">Hillary Clinton</label><br>
+                    <label class="checkbox-label"><input type="checkbox" name="stream-candidate"
+                           class="candidateBox" value="sanders">Bernie Sanders
+                        </label>
+                </form>
+                <br>
+                <br>
+                <button id="stream-tweets" onclick="streamTweets()">Stream tweets!</button>
+            </td>
+        </tr>
+    </table>
+    <div align="center"><label id="copyright">Copyright © 2016 Alex Engel. All rights reserved.</label></div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="d3.min.js"></script>
+    <script src="topojson.v1.js"></script>
+    <script src="hashtagMap.js"></script>
+    
+</body>

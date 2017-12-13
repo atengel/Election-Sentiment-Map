@@ -1,0 +1,163 @@
+#mainSvg {
+    background-color: lightblue;
+    border: 2px solid black;
+}
+.land {
+  fill: #ffffbf;
+}
+
+#keySvg {
+    background-color: #232B2B;
+}
+
+#keyDiv {
+    align-content: center;
+}
+
+#header {
+    color: #CAFFB9;
+    text-align: center;
+}
+#sign-in-with-twitter {
+    padding: 0px;
+    border: none;
+}
+#visualization-table {
+    border-spacing: 15px;
+}
+#stream-tweets {
+    display: none;
+}
+#signInPic {
+    width: 200px;
+    height: auto;
+}
+
+#checkbox {
+    display: inline-block;
+    text-align: left;
+}
+#name-header {
+    color: #CAFFB9;
+    text-align: center;
+}
+#instructions {
+    display: none;
+    color: lightsteelblue;
+}
+#candidate-boxes {
+    display: none;
+}
+#real-time-label {
+    color: #3D72A4;
+}
+
+#candidate-menu-header {
+    color: #3D72A4;
+}
+.checkbox-label {
+    color: lightblue;
+}
+#historical-filter-cell {
+    border: 5px solid #B08800;
+    padding: 10px;
+}
+
+#stream-tweets {
+	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+	background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+	background-color:#2dabf9;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:5px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+#stream-tweets:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+	background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#real-time-filter-cell {
+    margin: 0; 
+    text-align: center;
+    padding: 10px;
+    border: 5px solid #B08800;
+}
+#svgCell {
+    border: 5px solid #B08800;
+    padding: 10px;
+}
+div.tooltip {   
+    position: absolute;         
+    text-align: center;         
+    width: auto;                    
+    height: auto;                   
+    padding: 2px;               
+    font: 12px sans-serif;      
+    background: lightsteelblue; 
+    border: 0px;        
+    border-radius: 8px;         
+    pointer-events: none;           
+}
+.state-boundary {
+  fill: none;
+  stroke: black;
+}
+#negativeLabel {
+    color: lightcoral;
+    float: left;
+    font-size: 14px;
+}
+#positiveLabel {
+    color: lightgreen;
+    float: right;
+    font-size: 14px;
+}
+body {
+    background: #232B2B;
+    font-family: Tahoma;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    fill:lightblue;
+    stroke: lightblue;
+    font-size: 12px;
+}
+
+#copyright {
+    font-size: 12px;
+    color:lightblue;
+}
